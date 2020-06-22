@@ -41,12 +41,15 @@ TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/block.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/chained_call_args.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/disable_align_in_function.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/functioncall.lua");
+TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/functioncall2.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/functiondef.lua");
+TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/functiondef2.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/indent_in_explist.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/long_var.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/nested_method_call.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/operators.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/table.lua");
+TEST_FILE(PROJECT_PATH "/test/testdata/linebreak/table2.lua");
 
 TEST_FILE(PROJECT_PATH "/test/testdata/comment/function.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/comment/space.lua");
@@ -56,11 +59,13 @@ TEST_FILE(PROJECT_PATH "/test/testdata/comment/attrib.lua");
 
 TEST_FILE(PROJECT_PATH "/test/testdata/statement/function_call.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/statement/function.lua");
+TEST_FILE(PROJECT_PATH "/test/testdata/statement/function2.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/statement/operator.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/statement/semi.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/statement/shebang.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/statement/statements.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/statement/table.lua");
+TEST_FILE(PROJECT_PATH "/test/testdata/statement/table2.lua");
 
 TEST_FILE(PROJECT_PATH "/test/testdata/literals/doublequote.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/literals/singlequote.lua");
@@ -69,6 +74,7 @@ TEST_FILE(PROJECT_PATH "/test/testdata/syntax/lua54.lua");
 
 TEST_FILE(PROJECT_PATH "/test/testdata/expression/function_1.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/expression/function_2.lua");
+TEST_FILE(PROJECT_PATH "/test/testdata/expression/function_3.lua");
 
 TEST_FILE(PROJECT_PATH "/test/testdata/issues/issue-1.lua");
 TEST_FILE(PROJECT_PATH "/test/testdata/issues/issue-18.lua");
