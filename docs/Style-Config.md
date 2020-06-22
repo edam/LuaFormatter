@@ -490,3 +490,23 @@ f "a" "b"
 require"foo"
 f"a" "b"
 ```
+
+### spaces_in_parens
+
+type: bool, default: false
+
+Inserts a spaces inside all types of parentheses (unless they are empty).
+
+```lua
+-- spaces_in_parens: false
+function foo(a, b, c)
+    return {4, 5, 6}
+end
+bar(foo()[1])
+
+-- spaces_in_parens: true
+function foo( a, b, c )
+    return { 4, 5, 6 }
+end
+bar( foo()[ 1 ] )
+```
