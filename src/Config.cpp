@@ -17,6 +17,7 @@ Config::Config() {
     node_["tab_width"] = 4;
     node_["continuation_indent_width"] = 4;
     node_["spaces_before_call"] = 1;
+    node_["spaces_in_parens"] = false;
 
     node_["keep_simple_control_block_one_line"] = true;
     node_["keep_simple_function_one_line"] = true;

@@ -134,6 +134,12 @@ int main(int argc, const char* argv[]) {
                               "Do not transform string literals to use double quote",
                               {"no-single-quote-to-double-quote"});
 
+    args::Group optSpacesParens(parser, "This group is all exclusive:", args::Group::Validators::AtMostOne);
+    args::Flag SpacesParens(optSpacesParens, "spaces in parentheses", "Ensure spaces inside non-empty parentheses (of all types)",
+                            {"spaces-in-parens"});
+    args::Flag noSpacesParens(optSpacesParens, "spaces in parentheses", "Ensure no spaces inside parentheses (of all types)",
+                            {"no-spaces-in-parens"});
+
     args::PositionalList<string> files(parser, "Lua scripts", "Lua scripts to format");
 
     Config config;
@@ -292,6 +298,12 @@ int main(int argc, const char* argv[]) {
         config.argmap["single_quote_to_double_quote"] = true;
     } else if (noSingleDouble) {
         config.argmap["single_quote_to_double_quote"] = false;
+    }
+
+    if (SpacesParens) {
+        config.argmap["spaces_in_parens"] = true;
+    } else if (noSpacesParens) {
+        config.argmap["spaces_in_parens"] = false;
     }
 
     string configFileName = args::get(cFile);
